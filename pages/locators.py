@@ -8,6 +8,9 @@ class BasePageLocators():
 
 class MainPageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    BASKET_LINK = (By.CSS_SELECTOR, "span a")
+    BASKET_ITEMS = (By.CSS_SELECTOR, '.basket-items')
+    EMPTY_BASKET_MESSAGE = (By.CSS_SELECTOR, 'div.content > div#content_inner > p')
 
 
 class LoginPageLocators:
