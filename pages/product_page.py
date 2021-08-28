@@ -23,7 +23,9 @@ class ProductPage(BasePage):
 
     def should_be_price_product_equal_real_product(self):
         price = self.browser.find_element(*ProductPageLocators.PRICE).text
+        print(price)
         price_message = self.browser.find_element(*ProductPageLocators.PRICE_MESSAGE).text
+        print(price_message)
         assert price == price_message, "Real price dosn't equal price in basket"
 
     def should_not_be_success_message(self):
